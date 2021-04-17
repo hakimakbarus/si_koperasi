@@ -339,17 +339,17 @@ return [
         [
             'text' => 'Madrasah',
             'url'  => 'superadmin/madrasah',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-place-of-worship',
         ],
         [
             'text' => 'Ribath',
             'url'  => 'superadmin/ribath',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-bed',
         ],
         [
             'text' => 'Santri',
             'url'  => 'superadmin/santri',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-users',
         ],
     ],
 
