@@ -20,6 +20,11 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
+        'jenis_kelamin',
+        'alamat',
+        'telepon',
+        'status',
     ];
 
     /**
@@ -40,4 +45,23 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function adminlte_image()
+    {
+        return 'https://picsum.photos/300/300';
+    }
+
+    public function adminlte_desc()
+    {
+        if(auth()->user()->jenis_kelamin == 'L'){
+            return 'That\'s a nice guy';
+        } else if (auth()->user()->jenis_kelamin == 'P') {
+            return 'That\'s a nice girl';
+        }
+    }
+
+    public function adminlte_profile_url()
+    {
+        return 'profile';
+    }
 }
